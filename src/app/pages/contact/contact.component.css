@@ -1,0 +1,15 @@
+.container {
+  width: 70%;
+  margin-bottom: 2rem;
+}
+
+.row {
+  text-align: center;
+  justify-content: center;
+}
+
+#LI,
+#Mail,
+#GH {
+  color: #42a8c0;
+}

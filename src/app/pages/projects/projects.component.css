@@ -1,0 +1,54 @@
+section {
+  width: 85%;
+  margin: 0 auto;
+}
+
+section h3 {
+  display: block;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+section h4 {
+  margin: 5px 0 15px;
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.col-md-5 {
+  text-align: center;
+}
+.marketing .col-lg-4 {
+  text-align: center;
+}
+
+.marketing h2 {
+  font-weight: 400;
+}
+
+.featurette-divider {
+  margin: 5rem 0;
+}
+
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -0.05rem;
+}
+
+@media (min-width: 40em) {
+  .featurette-heading {
+    font-size: 50px;
+  }
+
+  .featurette {
+    align-items: center;
+    justify-items: center;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+}

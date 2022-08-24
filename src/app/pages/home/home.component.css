@@ -1,0 +1,67 @@
+.circle {
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  margin: 0 auto 2rem;
+}
+
+#ing {
+  background-image: url("../../../assets/images/ing.png");
+}
+
+#dev {
+  background-image: url("../../../assets/images/dev.png");
+  margin-bottom: 1.5rem;
+}
+
+#musico {
+  background-image: url("../../../assets/images/musico.png");
+  text-align: justify;
+}
+
+@media (min-width: 768px) {
+  .cirlce {
+    font-size: 3.5rem;
+  }
+
+  .row {
+    justify-content: space-around;
+  }
+
+  .col-md-5 {
+    text-align: center;
+  }
+
+  .marketing .col-lg-4 {
+    text-align: center;
+  }
+
+  .marketing h2 {
+    font-weight: 400;
+  }
+
+  .featurette-divider {
+    margin: 5rem 0;
+  }
+
+  .featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -0.05rem;
+  }
+}
+
+@media (min-width: 40em) {
+  .featurette-heading {
+    font-size: 50px;
+  }
+
+  .featurette {
+    align-items: center;
+    justify-items: center;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+}
