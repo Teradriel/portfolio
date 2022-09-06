@@ -40,3 +40,8 @@
 p {
   text-align: justify;
 }
+
+a {
+  outline: none;
+  text-decoration: none;
+}

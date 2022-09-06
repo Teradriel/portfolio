@@ -8,3 +8,9 @@ nav {
   align-items: center;
   top: 0;
 }
+
+@media screen and (max-width: 499px) {
+  nav {
+    height: fit-content;
+  }
+}
