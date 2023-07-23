@@ -1,12 +1,11 @@
-<div class="contenedor rectangle">
-  <h1 class="texto">Mantenete en contacto</h1>
+<div class="contenedor rectangle" *transloco="let t, read 'contact'">
+  <h1 class="texto">{{t('title')}}</h1>
 </div>
-<section class="container">
+<section class="container" *transloco="let t, read 'contact'">
   <div class="row">
     <div class="col-auto">
       <p class="lead">
-        Si tienes alguna duda o quieres contactarme, puedes hacerlo a través de
-        cualquiera de las siguientes redes sociales:
+        {{t('parag')}}
       </p>
       <div class="row">
         <div class="col-md-4">

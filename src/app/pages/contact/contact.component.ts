@@ -31,6 +31,6 @@ export class ContactComponent implements OnInit {
   onSubmit(event: Event) {
     event.preventDefault();
     const value = this.form.value;
-    console.log(value);
+    console.log(value); //TODO: save to spreadsheet in google
   }
 }

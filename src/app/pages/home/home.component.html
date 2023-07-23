@@ -1,9 +1,8 @@
-<section>
+<section *transloco="let t, read 'home'">
   <div class="rectangle contenedor">
     <div class="texto">
       <h1>Luca Terzariol</h1>
-      <p>
-        Ingeniero químico, apasionado por la informática y músico por gusto.
+      <p>{{t('ing_sub')}}
       </p>
     </div>
   </div>
@@ -12,33 +11,21 @@
     <div class="row">
       <div class="col-lg-4">
         <div class="circle" id="ing"></div>
-        <h2>Ingeniero Químico</h2>
-        <p>
-          Recibido de la Universidad Nacional de Córdoba y la Università degli
-          Studi di Salerno, Italia, ambos en 2017. He hecho cursos sobre Sistema
-          de Gestion de la Calidad, Trabajo en equipo, Gestion de las personas,
-          Resolución de problemas, entre otros.
+        <h2>{{t('ing_title')}}</h2>
+        <p>{{t('ing_parag')}}
         </p>
       </div>
       <div class="col-lg-4">
         <div class="circle" id="dev"></div>
-        <h2>Desarrollador Web Fullstack Jr.</h2>
-        <p>
-          Durante 2022 terminé cursos de programacion FullStack. Adquiriendo
-          conocimientos en Angular (HTML+CSS+Typescript), React, Javascript,
-          MySQL, JAVA y PHP. Para saber más sobre mis proyectos, haga click en
-          la sección de contacto.
+        <h2>{{t('dev_title')}}</h2>
+        <p>{{t('dev_parag')}}
         </p>
       </div>
 
       <div class="col-lg-4">
         <div class="circle" id="musico"></div>
-        <h2>Músico</h2>
-        <p>
-          Toco la batería desde los 15 años. Durante el 2019 y 2020 fui parte de
-          Xilphide, una banda de Symphonic Metal influenciada por Nightwish,
-          Stratovarius y Epica, entre otras. Con un disco editado y
-          presentaciones en vivo en Córdoba capital.
+        <h2>{{t('mus_title')}}</h2>
+        <p>{{t('mus_parag')}}
         </p>
       </div>
     </div>
@@ -51,10 +38,7 @@
           FrontEnd:
           <span class="text-muted">Angular</span>
         </h2>
-        <p class="lead">
-          Framework para aplicaciones web desarrollado en TypeScript, de código
-          abierto, mantenido por Google, que se utiliza para crear y mantener
-          aplicaciones web de una sola página.
+        <p class="lead">{{t('angul_parag')}}
         </p>
       </div>
       <div class="col-md-5">
@@ -73,18 +57,11 @@
       <div class="col-md-7 order-md-2">
         <h2 class="featurette-heading">
           BackEnd:
-          <span class="text-muted">JAVA y PHP</span>
+          <span class="text-muted">{{t('java-php')}}</span>
         </h2>
-        <p class="lead">
-          JAVA es la base para prácticamente todos los tipos de aplicaciones de
-          red, además del estándar global para desarrollar y distribuir
-          aplicaciones móviles y embebidas, juegos, contenido basado en web y
-          software de empresa.
+        <p class="lead">{{t('java_parag')}}
         </p>
-        <p class="lead">
-          PHP (acrónimo recursivo de PHP: Hypertext Preprocessor ) es un
-          lenguaje de código abierto muy popular especialmente adecuado para el
-          desarrollo web y que puede ser incrustado en HTML.
+        <p class="lead">{{t('php_parag')}}
         </p>
       </div>
       <div class="col-md-5 order-md-1">
@@ -92,6 +69,28 @@
         <img src="../../../assets/images/java.png" alt="java" />
       </div>
     </div>
+
+    <hr class="featurette-divider" />
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">
+          
+          <span class="text-muted">.NET</span>
+        </h2>
+        <p class="lead">{{t('net_parag')}}
+        </p>
+      </div>
+      <div class="col-md-5">
+        <img
+          src="../../../assets/images/Microsoft_.NET_logo.png"
+          alt=".NET"
+          width="200"
+          height="200"
+        />
+      </div>
+    </div>
+    
     <hr class="featurette-divider" />
   </div>
 </section>

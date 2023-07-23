@@ -1,17 +1,22 @@
-<header>
+<header *transloco="let t, read 'header'">
   <nav ngbNav #nav="ngbNav" class="nav-tabs">
     <ng-container ngbNavItem>
-      <a routerLink="home" ngbNavLink>Inicio</a>
+      <a routerLink="home" ngbNavLink>{{t('home')}}</a>
     </ng-container>
     <ng-container ngbNavItem>
-      <a routerLink="about" ngbNavLink>Sobre mí y este proyecto</a>
+      <a routerLink="about" ngbNavLink>{{t('about')}}</a>
     </ng-container>
     <ng-container ngbNavItem>
-      <a routerLink="projects" ngbNavLink>Proyectos</a>
+      <a routerLink="projects" ngbNavLink>{{t('projects')}}</a>
     </ng-container>
     <ng-container ngbNavItem>
-      <a routerLink="contact" ngbNavLink>Contacto</a>
+      <a routerLink="contact" ngbNavLink>{{t('contact')}}</a>
     </ng-container>
+    <div>
+      <button class="btn lang-button" (click)="clickTranslate('en')"><img width="25" height="25" src="../../../assets/images/flag-english-ico.ico" alt="english"></button>
+      <button class="btn lang-button" (click)="clickTranslate('it')"><img width="25" height="25" src="../../../assets/images/flag-italy-ico.ico" alt="italian"></button>
+      <button class="btn lang-button" (click)="clickTranslate('es')"><img width="25" height="25" src="../../../assets/images/flag-spain-ico.ico" alt="spanish"></button>
+    </div>
   </nav>
 
   <div [ngbNavOutlet]="nav"></div>

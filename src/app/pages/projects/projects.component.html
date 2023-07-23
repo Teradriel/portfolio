@@ -1,15 +1,15 @@
-<div class="contenedor rectangle">
-  <h1 class="texto">Proyectos</h1>
+<div class="contenedor rectangle" *transloco="let t, read 'projects'">
+  <h1 class="texto">{{t('title')}}</h1>
 </div>
-<section>
+<section *transloco="let t, read 'projects'">
   <div class="row featurette">
     <div class="col-md-7 order-md-2">
       <h2 class="featurette-heading">
-        Calculadora:
+        {{t('calc')}}
         <span class="text-muted">HTML + CSS + JS</span>
       </h2>
       <p class="lead">
-        Calculadora científica clásica, con las funciones más importantes.
+        {{t('calc_parag')}}
       </p>
       <p>
         <a target="_blank" href="https://github.com/Teradriel/Calculadora"
@@ -35,14 +35,11 @@
   <div class="row featurette">
     <div class="col-md-7">
       <h2 class="featurette-heading">
-        Lista de tareas:
+        {{t('task')}}
         <span class="text-muted">Angular</span>
       </h2>
       <p class="lead">
-        Desarrollado con Angular 14, este proyecto es una lista de tareas que
-        permite agregar, eliminar y editar tareas. Indepentemente de la página
-        en la que se encuentre, la información se guarda en IndexedDB del
-        navegador.
+        {{t('task_parag')}}
       </p>
       <p>
         <a target="_blank" href="https://github.com/Teradriel/todo-app"
@@ -64,13 +61,11 @@
   <div class="row featurette">
     <div class="col-md-7 order-md-2">
       <h2 class="featurette-heading">
-        Bitácora:
+        {{t('log')}}
         <span class="text-muted">Angular + MySQL + JAVA</span>
       </h2>
       <p class="lead">
-        Guarda las memorias de tus viajes, usalo como diario o como recordatorio
-        de tus viajes. Este proyecto fue desarrollado con Angular 14, MySQL y
-        Java.
+        {{t('log_parag')}}
       </p>
       <p>
         <a target="_blank" href="https://github.com/Teradriel/logbook-front"
@@ -86,6 +81,32 @@
       <img
         src="../../../assets/images/logbook.png"
         alt="logbook"
+        width="200"
+        height="200"
+      />
+    </div>
+  </div>
+  <hr class="featurette-divider" />
+
+  <div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading">
+        {{t('micro')}}
+        <span class="text-muted">.NET</span>
+      </h2>
+      <p class="lead">
+        {{t('micro_parag')}}
+      </p>
+      <p>
+        <a target="_blank" href="https://github.com/Teradriel/MicroHardness"
+          >FULL APP</a
+        >
+      </p>
+    </div>
+    <div class="col-md-5">
+      <img
+        src="../../../assets/images/hardness.png"
+        alt="MicroHardness"
         width="200"
         height="200"
       />

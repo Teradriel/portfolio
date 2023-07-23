@@ -1,0 +1,60 @@
+{
+    "about":{
+        "title": "Su di me e questo progetto",
+        "1_parag": "Fin da piccolo mi sono interessato a tutto ciò che riguardava i computer. Il primo computer della famiglia aveva Windows 3.1 che si avviava in DOS, abbiamo dovuto imparare a usare le il linguaggio per avviare l'interfacia grafica. Questo mi ha aiutato a capire cosa stava succedendo dietro il desktop. In quell'ambiente ho giocato con classici come 'The Incredible Machine', 'Age of Empires', 'Where in the world is Carmen SanDiego', tra altri.",
+        "2_parag": "Più tardi, quando ero al liceo, il mondo dei computer è diventato più accessibile. Giustamente con l'avanzata esplosiva dell'industria dei videogiochi, alla quale non ho opposto resistenza.",
+        "3_parag": "Durante questo periodo ho anche iniziato a imparare uno dei miei più grandi hobby, la batteria. Ho suonato diverse garage band con gli amici solo per divertimento, fino a quando ho iniziato l'università e mi sono allontanato un po' dai due mondi che mi avevano appassionato fino ad allora.",
+        "4_parag": "Non per rendere la mia vita amara, ma al contrario: ho scoperto qualcos'altro che non sapevo mi avrebbe dato tanta gioia. Ho iniziato a studiare ciò che mi definisce ormai da qualche anno: l'ingegneria chimica. Come la maggior parte degli studenti di Córdoba 'ho preso il mio tempo per laurearmi, per imparare meglio quello che serve' (pfff, a volte piace mentire a me stesso). Sono stato in grado di lavorare su ciò che ho studiato, anche se all'inizio non lo capivo. Questo giro di eventi mi ha insegnato che la perseveranza è la migliore amica che puoi avere.",
+        "x4_parag":"Dai, continui a fidarti agli NFT, un giorno diventerai ricco",
+        "5_parag": "Durante la mia bellissima carriera, ho avuto l'opportunità di continuare a conoscere l'industria dei videogiochi fino a trovare la", 
+        "x51_parag":"chiave di volta",
+        "x52_parag":"(secondo i miei gusti) dei giochi del mondo,",
+        "x53_parag": "Potrei passare giorni interi a spiegare tutto quello che si può fare in questo meraviglioso universo. Quest'opera d'arte mi ha insegnato che puoi sballarti senza dover essere il più competitivo, il più abile o il più intelligente. Proprio come nella vita reale. Le persone di successo sono arrivate a quel punto della loro vita perché non si sono mai arrese. Gli straordinari sono i minimi; a noi altri non ci resta altro che camminare, ma ci arriveremo, ne sono sicuro.",
+        "x54_page":"https://it.wikipedia.org/wiki/Chiave_di_volta",
+        "6_parag": "Tutto questo manoscritto per arrivare al presente e spiegare il motivo di questo progetto, dove ancora una volta ho preso in mano la situazione e mi sono concesso il tempo per imparare gli strumenti del futuro: la programmazione. Ho iniziato con un linguaggio comodo e facile da capire come Angular, JAVA e MySQL. Successivamente sono riuscito a finire un corso PHP, e un'altro di .net e WPF.",
+        "7_parag": "Ora aspetto di vedere cosa riserva il futuro poiché nessuno dei capitoli è ancora chiuso.",
+        "8_parag": "Quindi rallegrati!, caro lettore che è arrivato a questo punto della pagina.",
+        "x8_parag":"Tutto può essere raggiunto!"
+    },
+    "contact": {
+        "title":"Resta in contatto",
+        "parag":"Se hai domande o vuoi contattarmi, puoi farlo tramite uno dei seguenti social network:"
+    },
+    "home":{
+        "ing_title":"Ingegnere chimico",
+        "ing_sub":"Ingegnere chimico, appassionato di informatica e musicista per scelta.",
+        "ing_parag":"Laureato dall'Università Nazionale di Córdoba, Argentina e dall'Università degli Studi di Salerno, Italia, entrambi titoli nel 2017. Ho seguito corsi su Sistemi di Gestione della Qualità, Lavoro di Squadra, Gestione delle Persone, Problem Solving, tra altri.",
+        "dev_title":"Sviluppatore Web Fullstack Jr",
+        "dev_parag":"Durante il 2022 ho finito corsi di programmazione FullStack. Ho acquisito conoscenze in Angular (HTML+CSS+Typescript), React, Javascript, MySQL, JAVA, PHP e .net con WPF. Per saperne di più sui miei progetti, clicca sulla sezione contatti.",
+        "mus_title":"Musicista",
+        "mus_parag":"Suono la batteria da quando avevo 15 anni. Durante il 2019 e il 2020 ho fatto parte degli Xilphide, una band Symphonic Metal influenzata da Nightwish, Stratovarius ed Epica, tra altri. Con un album e spettacoli dal vivo nella città di Córdoba.",
+        "angul_parag":"Un framework per applicazioni web sviluppato in TypeScript, open source, gestito da Google, utilizzato per creare e mantenere applicazioni web a pagina singola.",
+        "java_parag":"JAVA è la base per praticamente tutti i tipi di applicazioni di rete, nonché lo standard globale per lo sviluppo e la distribuzione di applicazioni mobili e integrate, giochi, contenuti basati sul Web e software aziendale.",
+        "java-php":"JAVA e PHP",
+        "php_parag":"PHP (acronimo PHP ricorsivo: Hypertext Preprocessor) è un linguaggio open source molto popolare particolarmente adatto allo sviluppo web e può essere incorporato in HTML.",
+        "net_parag":".NET è un framework libero e open source sviluppato dalla .NET Foundation sotto licenza MIT e distribuito da Microsoft per i sistemi operativi Microsoft Windows, macOS e Linux. .NET sostituisce il precedente framework proprietario denominato .NET Framework."
+    },
+    "projects":{
+        "title":"Progetti",
+        "calc":"Calcolatrice:",
+        "calc_parag":"Classica calcolatrice scientifica, con le funzioni più importanti.",
+        "task":"Task list:",
+        "task_parag":"Sviluppato con Angular 14, questo progetto è un elenco di attività che consente di aggiungere, eliminare e modificare attività. Indipendentemente dalla pagina in cui ti trovi, le informazioni vengono memorizzate nell'IndexedDB del browser.",
+        "log":"Logbook:",
+        "log_parag":"Salva i ricordi dei tuoi viaggi, usalo come diario o come promemoria dei tuoi viaggi. Questo progetto è stato sviluppato con Angular 14, MySQL e Java.",
+        "micro":"Applicativo per microdurezze:",
+        "micro_parag":"Un piccolo programma per calcolare e tracciare i dati di microdurezza - Utilizzabile solo con il file csv di microdurezza dal tester di microdurezza FutureTech. Per un campione per testare il programma, per favore fatemelo sapere."
+    },
+    "footer":{
+        "copy":"Copyleft 2023 Tutti i sinistri riservati - Visita",
+        "copy_2":"per vedere cosa sto facendo.",
+        "parag":"Progettato con sudore e lacrime, ma soprattutto con l'aiuto di",
+        "and": "e"
+    },
+    "header":{
+        "home":"Inizio",
+        "projects":"Progetti",
+        "contact":"Contatto",
+        "about":"Su di me e questo progetto"
+    }
+}

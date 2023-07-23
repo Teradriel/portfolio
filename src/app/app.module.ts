@@ -20,6 +20,8 @@ import { FooterComponent } from './shared/footer/footer.component';
 //Style imports
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { HttpClientModule } from '@angular/common/http';
+import { TranslocoRootModule } from './transloco-root.module';
 
 @NgModule({
   declarations: [
@@ -37,6 +39,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     NgbModule,
     FontAwesomeModule,
     ReactiveFormsModule,
+    HttpClientModule,
+    TranslocoRootModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
