@@ -11,11 +11,13 @@ h2{
 
 #ing {
   background-image: url("../../../assets/images/ing.png");
+  cursor: pointer;
 }
 
 #dev {
   background-image: url("../../../assets/images/dev.png");
   margin-bottom: 1.5rem;
+  cursor: pointer;
 }
 
 #musico {

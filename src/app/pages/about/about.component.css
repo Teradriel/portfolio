@@ -12,3 +12,7 @@ p {
 q {
   font-size: small;
 }
+
+a{
+  cursor: pointer;
+}

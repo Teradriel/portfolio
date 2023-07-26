@@ -10,13 +10,21 @@
   <div class="container marketing">
     <div class="row">
       <div class="col-lg-4">
-        <div class="circle" id="ing"></div>
+        <div class="circle" id="ing" (click)="cvIng()" 
+        placement="bottom"
+        ngbPopover="{{t('CV_pop')}}"
+        popoverTitle="{{t('CV_title')}}"
+        ></div>
         <h2>{{t('ing_title')}}</h2>
         <p>{{t('ing_parag')}}
         </p>
       </div>
       <div class="col-lg-4">
-        <div class="circle" id="dev"></div>
+        <div class="circle" id="dev" (click)="cvDev()"
+        placement="bottom"
+        ngbPopover="{{t('CV_pop')}}"
+        popoverTitle="{{t('CV_title')}}"
+        ></div>
         <h2>{{t('dev_title')}}</h2>
         <p>{{t('dev_parag')}}
         </p>
