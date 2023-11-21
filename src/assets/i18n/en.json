@@ -44,7 +44,9 @@
         "log":"Logbook:",
         "log_parag":"Save your travel memories, use it as a diary or as a reminder of your travels. This project was developed with Angular 14, MySQL and Java.",
         "micro":"Micro hardness app:",
-        "micro_parag":"A small program to calculate and plot microhardness data - Only usable with microhardness csv file from FutureTech microhardness tester. For a sample to test the program, please let me know."
+        "micro_parag":"A small program to calculate and plot microhardness data - Only usable with microhardness csv file from FutureTech microhardness tester. For a sample to test the program, please let me know.",
+        "no_country":"Collaborative project at NoCountry",
+        "no_country_parag":"Work environment simulation platform. My project was an inventory management page for entrepreneurs and micro businesses. Particularly I was one of the backend developers with JAVA-Springboot, in charge of security with spring security and user authentication with JWT. I also helped in the deployment of the project and participated as DevOps using Docker."
     },
     "footer":{
         "copy":"Copyleft 2023 All claims reserved - Visit",

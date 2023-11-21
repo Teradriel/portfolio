@@ -44,7 +44,9 @@
         "log":"Bitácora:",
         "log_parag":"Guarda las memorias de tus viajes, usalo como diario o como recordatorio de tus viajes. Este proyecto fue desarrollado con Angular 14, MySQL y Java.",
         "micro":"Aplicación para microdureza:",
-        "micro_parag":"Un pequeño programa para calcular y trazar datos de microdureza: solo se puede usar con el archivo csv de microdureza del probador de microdureza FutureTech. Para una muestra para probar el programa, por favor hágamelo saber."
+        "micro_parag":"Un pequeño programa para calcular y trazar datos de microdureza: solo se puede usar con el archivo csv de microdureza del probador de microdureza FutureTech. Para una muestra para probar el programa, por favor hágamelo saber.",
+        "no_country":"Proyecto colaborativo en NoCountry",
+        "no_country_parag":"Plataforma de simulación de entornos laborales. Mi proyecto fue una página de gestión de inventarios para emprendedores y micro empresas. Particularmente fui uno de los desarrolladores backend con JAVA-Springboot, encargado de la seguridad con spring security y la autenticación de usuarios con JWT. Además ayudé en el deploy del proyecto y participé como DevOps utilizando Docker."
     },
     "footer":{
         "copy":"Copyleft 2023 Todos los izquierdos reservados - Visite",

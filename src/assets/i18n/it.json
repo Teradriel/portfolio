@@ -44,7 +44,9 @@
         "log":"Logbook:",
         "log_parag":"Salva i ricordi dei tuoi viaggi, usalo come diario o come promemoria dei tuoi viaggi. Questo progetto è stato sviluppato con Angular 14, MySQL e Java.",
         "micro":"Applicativo per microdurezze:",
-        "micro_parag":"Un piccolo programma per calcolare e tracciare i dati di microdurezza - Utilizzabile solo con il file csv di microdurezza dal tester di microdurezza FutureTech. Per un campione per testare il programma, per favore fatemelo sapere."
+        "micro_parag":"Un piccolo programma per calcolare e tracciare i dati di microdurezza - Utilizzabile solo con il file csv di microdurezza dal tester di microdurezza FutureTech. Per un campione per testare il programma, per favore fatemelo sapere.",
+        "no_country":"Progetto collaborativo presso NoCountry",
+        "no_country_parag":"Piattaforma di simulazione dell'ambiente di lavoro. Il mio progetto era una pagina di gestione dell'inventario per imprenditori e microimprese. In particolare sono stato uno degli sviluppatori backend con JAVA-Springboot, responsabile della sicurezza con spring security e dell'autenticazione utente con JWT. Ho anche aiutato nella pubblicazione del progetto e ho partecipato come DevOps utilizzando Docker."
     },
     "footer":{
         "copy":"Copyleft 2023 Tutti i sinistri riservati - Visita",
