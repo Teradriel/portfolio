@@ -1,6 +1,6 @@
 {
     "about":{
-        "title": "Sobre mí y este proyecto",
+        "title": "Sobre mí",
         "1_parag": "Desde chiquito me interesó todo lo relacionado con la informática. La primera computadora de la familia tenía Windows 3.1 que iniciaba con DOS, y teníamos que aprender a usar las líneas para iniciar el entorno visual. Esto me ayudó para más adelante entender qué estaba pasando detrás del escritorio. En ese entorno jugaba con clásicos como 'The Incredible Machine', 'Age of Empires', 'Dónde está Carmen SanDiego', entre otros.",
         "2_parag": "Más adelante, cuando estaba en la secundaria, el mundo de las computadoras se me hizo más accesible. Coincidió con el avance explosivo de la industria de los videojuegos, al cual no le ofrecí resistencia alguna.",
         "3_parag": "Durante esta época empecé también a aprender una de mis mayores aficiones, la batería. Tuve varias bandas de garage con amigos simplemente por diversión, hasta que empecé la universidad y me alejé un poco de los dos mundos que me apasionaban hasta ese momento, la música y la informática.",
@@ -36,7 +36,7 @@
         "CV_pop":"Podés descargar mi CV haciendo click acá."
     },
     "projects":{
-        "title":"",
+        "title":"Proyectos",
         "calc":"Calculadora:",
         "calc_parag":"Calculadora científica clásica, con las funciones más importantes.",
         "task":"Lista de tareas:",

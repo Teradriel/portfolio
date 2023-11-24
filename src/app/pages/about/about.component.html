@@ -1,7 +1,7 @@
+<div class="contenedor rectangle" *transloco="let t, read 'about'">
+  <h1 class="texto">{{t('title')}}</h1>
+</div>
 <section *transloco="let t, read 'about'">
-  <div class="contenedor rectangle">
-    <h1 class="texto">{{t('title')}}</h1>
-  </div>
   <div>
     <p>{{t('1_parag')}}
     </p>
@@ -13,7 +13,7 @@
       <q>{{t('x4_parag')}}</q>
     </p>
     <p>{{t('5_parag')}} <a class="url" (click)="key()">{{t('key')}}</a> {{t('51_parag')}}
-      <a href="https://www.guildwars2.com/">Guild Wars 2</a>. {{t('x5_parag')}}
+      <a href="https://www.guildwars2.com/" target="_blank">Guild Wars 2</a>. {{t('x5_parag')}}
     </p>
     <p>{{t('6_parag')}}
     </p>
