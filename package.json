@@ -28,6 +28,7 @@
     "@ngneat/transloco": "^4.3.0",
     "@popperjs/core": "^2.10.2",
     "bootstrap": "^5.2.0",
+    "portfolio": "file:",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
