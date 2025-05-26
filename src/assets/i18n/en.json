@@ -1,63 +1,63 @@
 {
-    "about":{
-        "title": "About me",
-        "1_parag": "From an early age I was interested in everything related to computers. The first computer in the family had Windows 3.1 which booted into DOS, we had to learn the code language to boot into the graphical interface. This helped me understand what was happening behind the desktop. In that environment I played with classics like 'The Incredible Machine', 'Age of Empires', 'Where in the world is Carmen SanDiego', among others.",
-        "2_parag": "Later on, when I was in high school, the computer world became more accessible. Rightly so with the explosive advance of the video game industry, which I didn't resist.",
-        "3_parag": "During this time I also started learning one of my biggest hobbies, drums. I played several garage bands with friends just for fun, until I started university and moved away a bit from the two worlds that had fascinated me up until then.",
-        "4_parag": "Not to make my life bitter, but quite the opposite: I discovered something else that I didn't know would bring me so much joy. I started studying what has defined me for some years now: chemical engineering. Like most students in Córdoba 'I took my time to graduate, to better learn what it takes' (pfff, sometimes I like to lie to myself). I was able to work on what I studied, even if I didn't understand it at first. This turn of events has taught me that perseverance is the best friend you can have.",
-        "x4_parag":"Come on, keep trusting NFTs, you will become rich one day",
-        "5_parag": "During my beautiful career, I had the opportunity to continue learning about the video game industry until I found the",
-        "key":"keystone",
-        "51_parag": "(according to my taste) of the games of the world,",
-        "x5_parag": "I could spend whole days explaining everything that can be done in this wonderful universe. This work of art taught me that you can be someone without having to be the most competitive, the most skilled, or the smartest. Just like in real life. Successful people get to that point in their lives because they never give up. Extraordinary people are the less; the rest of us just have to walk our way, but we'll get there, I'm sure of it.",
-        "6_parag": "All this manuscript to get to the present and explain the reason for this project, where once again I took matters into my own hands and allowed myself the time to learn the tools of the future: programming. I started with comfortable and easy to understand language like Angular, JAVA and MySQL. Later I was able to finish a course in PHP, and another in .net and WPF.",
-        "7_parag": "Now I wait to see what the future holds as none of the chapters are closed yet.",
-        "8_parag": "So rejoice!, dear reader who has reached this point on the page.",
-        "x8_parag":"Everything can be achieved!"
-    },
-    "contact": {
-        "title":"Keep in touch",
-        "parag":"If you have any questions or want to contact me, you can do so via one of the following social networks:"
-    },
-    "home":{
-        "ing_title":"Chemical engineer",
-        "ing_sub":"Chemical engineer, IT enthusiast and musician by choice.",
-        "ing_parag":"Graduated from the National University of Córdoba, Argentina and the University of Salerno, Italy, both degrees in 2017. I have taken courses on Quality Management Systems, Teamwork, People Management, Problem Solving, among others.",
-        "dev_title":"Web Developer Full Stack Jr",
-        "dev_parag":"During 2022 I finished FullStack programming courses. I have gained knowledge in Angular (HTML+CSS+Typescript), React, Javascript, MySQL, JAVA, PHP and .net with WPF. To find out more about my projects, click on the contact section.",
-        "mus_title":"Musician",
-        "mus_parag":"I've been playing drums since I was 15. During 2019 and 2020 I was part of Xilphide, a Symphonic Metal band influenced by Nightwish, Stratovarius and Epica, among others. With an album and live performances in the city of Córdoba.",
-        "angul_parag":"An open-source, Google-maintained, TypeScript-developed web application framework used to build and maintain single-page web applications.",
-        "java_parag":"JAVA is the foundation for virtually all types of network applications, as well as the global standard for developing and deploying mobile and embedded applications, games, web-based content, and enterprise software.",
-        "java-php":"JAVA and PHP",
-        "php_parag":"PHP (recursive acronym PHP: Hypertext Preprocessor) is a very popular open source language that is particularly suitable for web development and can be embedded in HTML.",
-        "net_parag":".NET (pronounced as 'dot net'; formerly named .NET Core) is a free and open-source, managed computer software framework for Windows, Linux, and macOS operating systems. It is a cross-platform successor to .NET Framework. The project is mainly developed by Microsoft employees by way of the .NET Foundation, and released under an MIT License.",
-        "CV_title":"Download!",
-        "CV_pop":"You can download my CV clicking here."
-    },
-    "projects":{
-        "title":"Projects",
-        "calc":"Calculator:",
-        "calc_parag":"Classic scientific calculator, with the most important functions.",
-        "task":"Task list:",
-        "task_parag":"Developed with Angular 14, this project is a task list that allows you to add, delete and edit tasks. Regardless of which page you are on, the information is stored in the browser's IndexedDB.",
-        "log":"Logbook:",
-        "log_parag":"Save your travel memories, use it as a diary or as a reminder of your travels. This project was developed with Angular 14, MySQL and Java.",
-        "micro":"Micro hardness app:",
-        "micro_parag":"A small program to calculate and plot microhardness data - Only usable with microhardness csv file from FutureTech microhardness tester. For a sample to test the program, please let me know.",
-        "no_country":"Collaborative project at NoCountry",
-        "no_country_parag":"Work environment simulation platform. My project was an inventory management page for entrepreneurs and micro businesses. Particularly I was one of the backend developers with JAVA-Springboot, in charge of security with spring security and user authentication with JWT. I also helped in the deployment of the project and participated as DevOps using Docker."
-    },
-    "footer":{
-        "copy":"Copyleft 2023 All claims reserved - Visit",
-        "copy_2":"to see what I'm doing.",
-        "parag":"Designed with sweat and tears, but mostly with the help of",
-        "and": "and"
-    },
-    "header":{
-        "home":"Home",
-        "projects":"Projects",
-        "contact":"Contact",
-        "about":"About me"
-    }
+  "about": {
+    "title": "About me",
+    "1_parag": "From an early age I was interested in everything related to computers. The first computer in the family had Windows 3.1 which booted into DOS, we had to learn the code language to boot into the graphical interface. This helped me understand what was happening behind the desktop. In that environment I played with classics like 'The Incredible Machine', 'Age of Empires', 'Where in the world is Carmen SanDiego', among others.",
+    "2_parag": "Later on, when I was in high school, the computer world became more accessible. Rightly so with the explosive advance of the video game industry, which I didn't resist.",
+    "3_parag": "During this time I also started learning one of my biggest hobbies, drums. I played several garage bands with friends just for fun, until I started university and moved away a bit from the two worlds that had fascinated me up until then.",
+    "4_parag": "Not to make my life bitter, but quite the opposite: I discovered something else that I didn't know would bring me so much joy. I started studying what has defined me for some years now: chemical engineering. Like most students in Córdoba 'I took my time to graduate, to better learn what it takes' (pfff, sometimes I like to lie to myself). I was able to work on what I studied, even if I didn't understand it at first. This turn of events has taught me that perseverance is the best friend you can have.",
+    "x4_parag": "Come on, keep trusting NFTs, you will become rich one day",
+    "5_parag": "During my beautiful career, I had the opportunity to continue learning about the video game industry until I found the",
+    "key": "keystone",
+    "51_parag": "(according to my taste) of the games of the world,",
+    "x5_parag": "I could spend whole days explaining everything that can be done in this wonderful universe. This work of art taught me that you can be someone without having to be the most competitive, the most skilled, or the smartest. Just like in real life. Successful people get to that point in their lives because they never give up. Extraordinary people are the less; the rest of us just have to walk our way, but we'll get there, I'm sure of it.",
+    "6_parag": "All this manuscript to get to the present and explain the reason for this project, where once again I took matters into my own hands and allowed myself the time to learn the tools of the future: programming. I started with comfortable and easy to understand language like Angular, JAVA and MySQL. Later I was able to finish a course in PHP, and another in .net and WPF.",
+    "7_parag": "Now I wait to see what the future holds as none of the chapters are closed yet.",
+    "8_parag": "So rejoice!, dear reader who has reached this point on the page.",
+    "x8_parag": "Everything can be achieved!"
+  },
+  "contact": {
+    "title": "Keep in touch",
+    "parag": "If you have any questions or want to contact me, you can do so via one of the following social networks:"
+  },
+  "home": {
+    "ing_title": "Chemical engineer",
+    "ing_sub": "Chemical engineer, IT enthusiast and musician by choice.",
+    "ing_parag": "Graduated from the National University of Córdoba, Argentina and the University of Salerno, Italy, both degrees in 2017. I have taken courses on Quality Management Systems, Teamwork, People Management, Problem Solving, among others.",
+    "dev_title": "Web Developer Full Stack Jr",
+    "dev_parag": "During 2022 I finished FullStack programming courses. I have gained knowledge in Angular (HTML+CSS+Typescript), React, Javascript, MySQL, JAVA, PHP and .net with WPF. To find out more about my projects, click on the contact section. Continued enhancing my skills in MAUI and C# by developing an internal application aimed at streamlining our workflow and improving overall efficiency.",
+    "mus_title": "Musician",
+    "mus_parag": "I've been playing drums since I was 15. During 2019 and 2020 I was part of Xilphide, a Symphonic Metal band influenced by Nightwish, Stratovarius and Epica, among others. With an album and live performances in the city of Córdoba.",
+    "angul_parag": "An open-source, Google-maintained, TypeScript-developed web application framework used to build and maintain single-page web applications.",
+    "java_parag": "JAVA is the foundation for virtually all types of network applications, as well as the global standard for developing and deploying mobile and embedded applications, games, web-based content, and enterprise software.",
+    "java-php": "JAVA and PHP",
+    "php_parag": "PHP (recursive acronym PHP: Hypertext Preprocessor) is a very popular open source language that is particularly suitable for web development and can be embedded in HTML.",
+    "net_parag": ".NET (pronounced as 'dot net'; formerly named .NET Core) is a free and open-source, managed computer software framework for Windows, Linux, and macOS operating systems. It is a cross-platform successor to .NET Framework. The project is mainly developed by Microsoft employees by way of the .NET Foundation, and released under an MIT License.",
+    "CV_title": "Download!",
+    "CV_pop": "You can download my CV clicking here."
+  },
+  "projects": {
+    "title": "Projects",
+    "calc": "Calculator:",
+    "calc_parag": "Classic scientific calculator, with the most important functions.",
+    "task": "Task list:",
+    "task_parag": "Developed with Angular 14, this project is a task list that allows you to add, delete and edit tasks. Regardless of which page you are on, the information is stored in the browser's IndexedDB.",
+    "log": "Logbook:",
+    "log_parag": "Save your travel memories, use it as a diary or as a reminder of your travels. This project was developed with Angular 14, MySQL and Java.",
+    "micro": "Micro hardness app:",
+    "micro_parag": "A small program to calculate and plot microhardness data - Only usable with microhardness csv file from FutureTech microhardness tester. For a sample to test the program, please let me know.",
+    "no_country": "Collaborative project at NoCountry",
+    "no_country_parag": "Work environment simulation platform. My project was an inventory management page for entrepreneurs and micro businesses. Particularly I was one of the backend developers with JAVA-Springboot, in charge of security with spring security and user authentication with JWT. I also helped in the deployment of the project and participated as DevOps using Docker."
+  },
+  "footer": {
+    "copy": "Copyleft 2023 All claims reserved - Visit",
+    "copy_2": "to see what I'm doing.",
+    "parag": "Designed with sweat and tears, but mostly with the help of",
+    "and": "and"
+  },
+  "header": {
+    "home": "Home",
+    "projects": "Projects",
+    "contact": "Contact",
+    "about": "About me"
+  }
 }
