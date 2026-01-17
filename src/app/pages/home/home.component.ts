@@ -3,10 +3,11 @@ import { TranslocoService } from '@ngneat/transloco';
 import { NgbPopoverConfig, NgbPopoverModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css'],
-  providers: [NgbPopoverConfig],
+    selector: 'app-home',
+    templateUrl: './home.component.html',
+    styleUrls: ['./home.component.css'],
+    providers: [NgbPopoverConfig],
+    standalone: false
 })
 export class HomeComponent implements OnInit {
 
