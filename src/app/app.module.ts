@@ -20,29 +20,22 @@ import { FooterComponent } from './shared/footer/footer.component';
 //Style imports
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { HttpClientModule } from '@angular/common/http';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { TranslocoRootModule } from './transloco-root.module';
 
-@NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent,
-    AboutComponent,
-    ProjectsComponent,
-    ContactComponent,
-    HeaderComponent,
-    FooterComponent,
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    NgbModule,
-    FontAwesomeModule,
-    ReactiveFormsModule,
-    HttpClientModule,
-    TranslocoRootModule,
-  ],
-  providers: [],
-  bootstrap: [AppComponent],
-})
+@NgModule({ declarations: [
+        AppComponent,
+        HomeComponent,
+        AboutComponent,
+        ProjectsComponent,
+        ContactComponent,
+        HeaderComponent,
+        FooterComponent,
+    ],
+    bootstrap: [AppComponent], imports: [BrowserModule,
+        AppRoutingModule,
+        NgbModule,
+        FontAwesomeModule,
+        ReactiveFormsModule,
+        TranslocoRootModule], providers: [provideHttpClient(withInterceptorsFromDi())] })
 export class AppModule {}
