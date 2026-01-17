@@ -10,28 +10,42 @@
   <div class="container marketing">
     <div class="row">
       <div class="col-lg-4">
-        <div class="circle" id="ing" (click)="cvIng()" 
-        placement="bottom"
-        ngbPopover="{{t('CV_pop')}}"
-        popoverTitle="{{t('CV_title')}}"
-        ></div>
+        <button 
+          type="button"
+          class="circle" 
+          id="ing" 
+          (click)="cvIng()" 
+          placement="bottom"
+          ngbPopover="{{t('CV_pop')}}"
+          popoverTitle="{{t('CV_title')}}"
+          [attr.aria-label]="t('CV_title') + ' - ' + t('ing_title')"
+          role="button"
+          tabindex="0">
+        </button>
         <h2>{{t('ing_title')}}</h2>
         <p>{{t('ing_parag')}}
         </p>
       </div>
       <div class="col-lg-4">
-        <div class="circle" id="dev" (click)="cvDev()"
-        placement="bottom"
-        ngbPopover="{{t('CV_pop')}}"
-        popoverTitle="{{t('CV_title')}}"
-        ></div>
+        <button 
+          type="button"
+          class="circle" 
+          id="dev" 
+          (click)="cvDev()"
+          placement="bottom"
+          ngbPopover="{{t('CV_pop')}}"
+          popoverTitle="{{t('CV_title')}}"
+          [attr.aria-label]="t('CV_title') + ' - ' + t('dev_title')"
+          role="button"
+          tabindex="0">
+        </button>
         <h2>{{t('dev_title')}}</h2>
         <p>{{t('dev_parag')}}
         </p>
       </div>
 
       <div class="col-lg-4">
-        <div class="circle" id="musico"></div>
+        <div class="circle" id="musico" role="img" [attr.aria-label]="t('mus_title')"></div>
         <h2>{{t('mus_title')}}</h2>
         <p>{{t('mus_parag')}}
         </p>

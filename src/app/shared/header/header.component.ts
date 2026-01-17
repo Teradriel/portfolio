@@ -1,11 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-import { TranslocoService } from '@ngneat/transloco';
+import { RouterModule } from '@angular/router';
+import { TranslocoService, TranslocoModule } from '@ngneat/transloco';
+import { CommonModule } from '@angular/common';
+import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-    selector: 'app-header',
-    templateUrl: './header.component.html',
-    styleUrls: ['./header.component.css'],
-    standalone: false
+  selector: 'app-header',
+  templateUrl: './header.component.html',
+  styleUrls: ['./header.component.css'],
+  standalone: true,
+  imports: [CommonModule, RouterModule, TranslocoModule, NgbNavModule]
 })
 export class HeaderComponent implements OnInit {
 
