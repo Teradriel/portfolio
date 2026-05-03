@@ -46,7 +46,17 @@
     "micro": "Micro hardness app:",
     "micro_parag": "A small program to calculate and plot microhardness data - Only usable with microhardness CSV file from FutureTech microhardness tester. For a sample to test the program, please contact me.",
     "no_country": "Collaborative project at NoCountry",
-    "no_country_parag": "Work environment simulation platform. My project was an inventory management page for entrepreneurs and micro businesses. Particularly I was one of the backend developers with JAVA-Springboot, in charge of security with Spring Security and user authentication with JWT. I also collaborated in the deployment of the project and participated as DevOps using Docker."
+    "no_country_parag": "Work environment simulation platform. My project was an inventory management page for entrepreneurs and micro businesses. Particularly I was one of the backend developers with JAVA-Springboot, in charge of security with Spring Security and user authentication with JWT. I also collaborated in the deployment of the project and participated as DevOps using Docker.",
+    "bmpresence": "BMPresence — Presence Management System",
+    "bmpresence_parag": "Complete ecosystem of applications for managing reservations and presences in organizations. Includes a responsive web dashboard with interactive calendar and role-based user management, a REST API backend with JWT stateless authentication, and a .NET MAUI cross-platform mobile/desktop client with offline support.",
+    "rdpgenerator": "RDPGenerator — Remote Connection Manager",
+    "rdpgenerator_parag": "Windows desktop application (v6.2.2) for IT teams to create, organize and deploy remote connection configurations (RDP, AnyDesk, RustDesk). Features include system tray integration, daily log rotation, multi-team support, active connection detection, and integrated PDF documentation viewer with local SQLite database.",
+    "secretcard": "SecretCard — Multiplayer Card Game",
+    "secretcard_parag": "Real-time multiplayer card game for two players over the network. Built with .NET MAUI for iOS with Firebase Realtime Database for synchronization. Features room system by code, live game history, and four card types (Normal, Blocker, Nullifier, Protector) with reactive MVVM architecture.",
+    "rdpissues": "RDPIssues — IT Incident Reporting",
+    "rdpissues_parag": "Companion application for RDPGenerator that allows IT teams to report technical issues directly from the remote connection management environment. Includes automatic context of user and client information for seamless incident tracking.",
+    "onsalesbackend": "OnSalesBackend — Desktop Admin Panel",
+    "onsalesbackend_parag": "WPF desktop application in active development that serves as the local administration panel for the OnSales system. Built with C#, XAML and .NET technologies for robust business process management."
   },
   "footer": {
     "copy": "Copyleft 2023 All claims reserved - Visit",

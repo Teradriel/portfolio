@@ -46,7 +46,17 @@
     "micro": "Aplicación para microdureza:",
     "micro_parag": "Un pequeño programa para calcular y trazar datos de microdureza: solo se puede usar con el archivo CSV de microdureza del probador de microdureza FutureTech. Para una muestra para probar el programa, por favor contáctame.",
     "no_country": "Proyecto colaborativo en NoCountry",
-    "no_country_parag": "Plataforma de simulación de entornos laborales. Mi proyecto fue una página de gestión de inventarios para emprendedores y micro empresas. Particularmente fui uno de los desarrolladores backend con JAVA-Springboot, encargado de la seguridad con spring security y la autenticación de usuarios con JWT. Además ayudé en el deploy del proyecto y participé como DevOps utilizando Docker."
+    "no_country_parag": "Plataforma de simulación de entornos laborales. Mi proyecto fue una página de gestión de inventarios para emprendedores y micro empresas. Particularmente fui uno de los desarrolladores backend con JAVA-Springboot, encargado de la seguridad con spring security y la autenticación de usuarios con JWT. Además ayudé en el deploy del proyecto y participé como DevOps utilizando Docker.",
+    "bmpresence": "BMPresence — Sistema de Gestión de Presencias",
+    "bmpresence_parag": "Ecosistema completo de aplicaciones para gestionar reservas y presencias en organizaciones. Incluye un dashboard web responsivo con calendario interactivo y gestión de usuarios con roles, un backend REST API con autenticación JWT stateless, y un cliente móvil/escritorio multiplataforma con .NET MAUI con soporte offline.",
+    "rdpgenerator": "RDPGenerator — Gestor de Conexiones Remotas",
+    "rdpgenerator_parag": "Aplicación de escritorio para Windows (v6.2.2) orientada a equipos de IT para crear, organizar y desplegar configuraciones de conexión remota (RDP, AnyDesk, RustDesk). Incluye integración con system tray, rotación de logs diaria, soporte multi-team, detección de conexiones en uso y visor de documentación PDF integrado con base de datos SQLite local.",
+    "secretcard": "SecretCard — Juego de Cartas Multijugador",
+    "secretcard_parag": "Juego de cartas en tiempo real para dos jugadores en red con efectos realistas. Construido con .NET MAUI para iOS utilizando Firebase Realtime Database para sincronización. Incluye sistema de salas por código, historial de partida en vivo, y cuatro tipos de cartas (Normal, Bloqueador, Anulador, Protector) con arquitectura MVVM reactiva.",
+    "rdpissues": "RDPIssues — Reporte de Incidencias IT",
+    "rdpissues_parag": "Aplicación companion de RDPGenerator que permite al equipo IT reportar problemas técnicos directamente desde el entorno de gestión de conexiones remotas. Incluye contexto automático de información de usuario y cliente para un seguimiento de incidencias transparente.",
+    "onsalesbackend": "OnSalesBackend — Panel de Administración de Escritorio",
+    "onsalesbackend_parag": "Aplicación WPF en desarrollo activo que actúa como panel de administración local para el sistema OnSales. Construida con tecnologías C#, XAML y .NET para una robusta gestión de procesos empresariales."
   },
   "footer": {
     "copy": "Copyleft 2023 Todos los izquierdos reservados - Visite",
