@@ -1,27 +1,28 @@
-<div class="contenedor rectangle" *transloco="let t, read 'about'">
-  <h1 class="texto">{{t('title')}}</h1>
+<div class="contenedor rectangle" *transloco="let t; read: 'about'">
+  <h1 class="texto">{{ t("title") }}</h1>
 </div>
-<section *transloco="let t, read 'about'">
+<section *transloco="let t; read: 'about'">
   <div>
-    <p>{{t('1_parag')}}
+    <p>{{ t("1_parag") }}</p>
+    <p>{{ t("2_parag") }}</p>
+    <p>{{ t("3_parag") }}</p>
+    <p>
+      {{ t("4_parag") }}
+      <q>{{ t("x4_parag") }}</q>
     </p>
-    <p>{{t('2_parag')}}
+    <p>
+      {{ t("5_parag") }} <a class="url" (click)="key()">{{ t("key") }}</a>
+      {{ t("51_parag") }}
+      <a href="https://www.guildwars2.com/" target="_blank">Guild Wars 2</a>.
+      {{ t("x5_parag") }}
     </p>
-    <p>{{t('3_parag')}}
-    </p>
-    <p>{{t('4_parag')}} 
-      <q>{{t('x4_parag')}}</q>
-    </p>
-    <p>{{t('5_parag')}} <a class="url" (click)="key()">{{t('key')}}</a> {{t('51_parag')}}
-      <a href="https://www.guildwars2.com/" target="_blank">Guild Wars 2</a>. {{t('x5_parag')}}
-    </p>
-    <p>{{t('6_parag')}}
-    </p>
-    <p>{{t('7_parag')}}
-    </p>
-    <h5>{{t('8_parag')}}
+    <p>{{ t("6_parag") }}</p>
+    <p>{{ t("6b_parag") }}</p>
+    <p>{{ t("7_parag") }}</p>
+    <h5>
+      {{ t("8_parag") }}
       <br />
-      {{t('x8_parag')}}
+      {{ t("x8_parag") }}
     </h5>
   </div>
 </section>
