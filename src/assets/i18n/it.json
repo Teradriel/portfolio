@@ -29,7 +29,7 @@
     "mus_parag": "Suono la batteria da quando avevo 15 anni. Durante il 2019 e il 2020 ho fatto parte dei Xilphide, una band di Metal Sinfonico influenzata da Nightwish, Stratovarius ed Epica, tra gli altri. Con un album pubblicato e spettacoli dal vivo nella città di Córdoba.",
     "angul_parag": "Un framework per applicazioni web sviluppato in TypeScript, open source, mantenuto da Google, utilizzato per creare e gestire applicazioni web a pagina singola.",
     "java_parag": "JAVA è la base per praticamente tutti i tipi di applicazioni di rete, nonché lo standard globale per lo sviluppo e la distribuzione di applicazioni mobili e integrate, giochi, contenuti basati sul web e software aziendale.",
-    "java-php": "JAVA e PHP",
+    "java-php": "JAVA",
     "php_parag": "PHP (acronimo ricorsivo di PHP: Hypertext Preprocessor) è un linguaggio open source molto popolare, particolarmente adatto allo sviluppo web e che può essere incorporato in HTML.",
     "net_parag": ".NET è un framework libero e open source sviluppato dalla .NET Foundation sotto licenza MIT e distribuito da Microsoft per i sistemi operativi Microsoft Windows, macOS e Linux. .NET sostituisce il precedente framework proprietario denominato .NET Framework.",
     "CV_title": "Scarica!",
@@ -59,7 +59,7 @@
     "onsalesbackend_parag": "Applicazione WPF in sviluppo attivo che funge da pannello di amministrazione locale per il sistema OnSales. Realizzata con tecnologie C#, XAML e .NET per una gestione robusta dei processi aziendali."
   },
   "footer": {
-    "copy": "Copyleft 2023 Tutti i sinistri riservati - Visita",
+    "copy": "Copyleft 2026 Tutti i sinistri riservati - Visita",
     "copy_2": "per vedere cosa sto facendo.",
     "parag": "Progettato con sudore e lacrime, ma soprattutto con l'aiuto di",
     "and": "e"

@@ -1,10 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
-body{
+:root {
+  --color-primary: #2d7788;
+  --color-secondary: #42a8c0;
+  --color-accent: #95e3f5;
+  --color-bg-light: #f5f5f5;
+  --color-text-light: aliceblue;
+}
+
+body {
   margin-bottom: 7rem;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
 .rectangle {
-  background-color: #2d7788;
+  background: linear-gradient(135deg, #1e5f6e 0%, var(--color-secondary) 100%);
   margin-bottom: 3rem;
 }
 
@@ -12,16 +20,17 @@ body{
   cursor: pointer;
   width: 100%;
   border: none;
-  background: #42a8c0;
+  background: var(--color-secondary);
   color: #fff;
   margin: 0 0 5px;
   padding: 10px;
   font-size: 15px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .btn:hover {
-  background: #2d7788;
-  transition: background-color 0.3s ease-in-out;
+  background: var(--color-primary);
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
@@ -35,10 +44,11 @@ body{
 }
 
 .texto {
-  color: aliceblue;
+  color: var(--color-text-light);
   text-align: center;
   align-self: flex-end;
   bottom: 2rem;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 p {
@@ -48,4 +58,24 @@ p {
 a {
   outline: none;
   text-decoration: none;
+}
+
+/* Scroll-reveal animations */
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-in-up {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 }

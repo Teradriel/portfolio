@@ -29,7 +29,7 @@
     "mus_parag": "I've been playing drums since I was 15. During 2019 and 2020 I was part of Xilphide, a Symphonic Metal band influenced by Nightwish, Stratovarius and Epica, among others. With a published album and live performances in Córdoba city.",
     "angul_parag": "An open-source, Google-maintained, TypeScript-developed web application framework used to create and manage single-page web applications.",
     "java_parag": "JAVA is the foundation for virtually all types of network applications, as well as the global standard for developing and deploying mobile and embedded applications, games, web-based content, and enterprise software.",
-    "java-php": "JAVA and PHP",
+    "java-php": "JAVA",
     "php_parag": "PHP (recursive acronym PHP: Hypertext Preprocessor) is a very popular open source language that is particularly suitable for web development and can be embedded in HTML.",
     "net_parag": ".NET (pronounced as 'dot net'; formerly named .NET Core) is a free and open-source, managed computer software framework for Windows, Linux, and macOS operating systems. It is a cross-platform successor to .NET Framework. The project is mainly developed by Microsoft employees by way of the .NET Foundation, and released under an MIT License.",
     "CV_title": "Download!",
@@ -59,7 +59,7 @@
     "onsalesbackend_parag": "WPF desktop application in active development that serves as the local administration panel for the OnSales system. Built with C#, XAML and .NET technologies for robust business process management."
   },
   "footer": {
-    "copy": "Copyleft 2023 All claims reserved - Visit",
+    "copy": "Copyleft 2026 All claims reserved - Visit",
     "copy_2": "to see what I'm doing.",
     "parag": "Designed with sweat and tears, but mostly with the help of",
     "and": "and"

@@ -4,10 +4,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home.component';
 import { TranslocoModule } from '@ngneat/transloco';
 import { NgbPopoverModule } from '@ng-bootstrap/ng-bootstrap';
+import { IntersectDirective } from '../../shared/directives/intersect.directive';
 
-const routes: Routes = [
-  { path: '', component: HomeComponent }
-];
+const routes: Routes = [{ path: '', component: HomeComponent }];
 
 @NgModule({
   declarations: [HomeComponent],
@@ -15,7 +14,8 @@ const routes: Routes = [
     CommonModule,
     TranslocoModule,
     NgbPopoverModule,
-    RouterModule.forChild(routes)
-  ]
+    IntersectDirective,
+    RouterModule.forChild(routes),
+  ],
 })
-export class HomeModule { }
+export class HomeModule {}

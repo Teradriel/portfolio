@@ -23,31 +23,32 @@ a {
 }
 
 a:link {
-  color: #2d7788;
+  color: var(--color-primary);
 }
 
 a:visited {
-  color: #2d7788;
+  color: var(--color-primary);
 }
 
 a:focus {
   border-bottom: 1px solid;
-  background: #95e3f5;
+  background: var(--color-accent);
 }
 
 a:hover {
   border-bottom: 1px solid;
-  background: #95e3f5;
+  background: var(--color-accent);
 }
 
 a:active {
-  background: #2d7788;
-  color: #95e3f5;
+  background: var(--color-primary);
+  color: var(--color-accent);
 }
 
 .col-md-5 {
   text-align: center;
 }
+
 .marketing .col-lg-4 {
   text-align: center;
 }
@@ -64,6 +65,19 @@ a:active {
   font-weight: 300;
   line-height: 1;
   letter-spacing: -0.05rem;
+}
+
+.project-card {
+  border-radius: 12px;
+  padding: 1.5rem 1.5rem 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  background: #fff;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(45, 119, 136, 0.15);
 }
 
 @media (min-width: 40em) {

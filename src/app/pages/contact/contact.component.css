@@ -11,7 +11,7 @@
 #LI,
 #Mail,
 #GH {
-  color: #42a8c0;
+  color: var(--color-secondary);
 }
 
 @media (min-width: 40em) {

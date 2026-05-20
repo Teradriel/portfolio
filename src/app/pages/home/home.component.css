@@ -13,7 +13,7 @@
 .circle:focus {
   transform: scale(1.05);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  outline: 2px solid #007bff;
+  outline: 2px solid var(--color-primary);
   outline-offset: 2px;
 }
 
@@ -21,7 +21,7 @@
   transform: scale(0.98);
 }
 
-h2{
+h2 {
   font-size: 1.8rem;
 }
 
@@ -42,10 +42,6 @@ h2{
 }
 
 @media (min-width: 768px) {
-  .cirlce {
-    font-size: 3.5rem;
-  }
-
   .row {
     justify-content: space-around;
   }
