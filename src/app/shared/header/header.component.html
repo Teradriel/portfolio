@@ -1,44 +1,143 @@
-<header *transloco="let t; read: 'header'">
-  <nav ngbNav #nav="ngbNav" class="nav-tabs" [class.scrolled]="scrolled">
-    <ng-container ngbNavItem>
-      <a routerLink="home" ngbNavLink>{{ t("home") }}</a>
-    </ng-container>
-    <ng-container ngbNavItem>
-      <a routerLink="about" ngbNavLink>{{ t("about") }}</a>
-    </ng-container>
-    <ng-container ngbNavItem>
-      <a routerLink="projects" ngbNavLink>{{ t("projects") }}</a>
-    </ng-container>
-    <ng-container ngbNavItem>
-      <a routerLink="contact" ngbNavLink>{{ t("contact") }}</a>
-    </ng-container>
-    <div>
-      <button class="btn lang-button" (click)="clickTranslate('en')">
-        <img
-          width="25"
-          height="25"
-          src="../../../assets/images/flag-english-ico.ico"
-          alt="english"
-        />
-      </button>
-      <button class="btn lang-button" (click)="clickTranslate('it')">
-        <img
-          width="25"
-          height="25"
-          src="../../../assets/images/flag-italy-ico.ico"
-          alt="italian"
-        />
-      </button>
-      <button class="btn lang-button" (click)="clickTranslate('es')">
-        <img
-          width="25"
-          height="25"
-          src="../../../assets/images/flag-spain-ico.ico"
-          alt="spanish"
-        />
+<header class="header-root" *transloco="let t; read: 'header'">
+  <div class="nav-container" [class.scrolled]="scrolled">
+    <!-- Brand / Logo -->
+    <a routerLink="/home" class="brand-logo" (click)="closeMobileMenu()">
+      <span class="logo-text">LT</span>
+      <span class="logo-dot"></span>
+    </a>
+
+    <!-- Desktop Navigation Links -->
+    <nav class="nav-links desktop-only">
+      <a
+        routerLink="/home"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        class="nav-item"
+      >
+        <span>{{ t("home") }}</span>
+      </a>
+      <a routerLink="/about" routerLinkActive="active" class="nav-item">
+        <span>{{ t("about") }}</span>
+      </a>
+      <a routerLink="/projects" routerLinkActive="active" class="nav-item">
+        <span>{{ t("projects") }}</span>
+      </a>
+      <a routerLink="/contact" routerLinkActive="active" class="nav-item">
+        <span>{{ t("contact") }}</span>
+      </a>
+    </nav>
+
+    <!-- Language Selector & Mobile Toggle -->
+    <div class="header-actions">
+      <!-- Language Pill Switcher -->
+      <div class="lang-switcher">
+        <button
+          type="button"
+          class="lang-pill"
+          [class.active]="activeLang === 'es'"
+          (click)="clickTranslate('es')"
+          aria-label="Cambiar a Español"
+          title="Español"
+        >
+          <img
+            src="assets/images/flag-spain-ico.ico"
+            alt="ES"
+            width="16"
+            height="16"
+          />
+          <span class="lang-code">ES</span>
+        </button>
+        <button
+          type="button"
+          class="lang-pill"
+          [class.active]="activeLang === 'en'"
+          (click)="clickTranslate('en')"
+          aria-label="Switch to English"
+          title="English"
+        >
+          <img
+            src="assets/images/flag-english-ico.ico"
+            alt="EN"
+            width="16"
+            height="16"
+          />
+          <span class="lang-code">EN</span>
+        </button>
+        <button
+          type="button"
+          class="lang-pill"
+          [class.active]="activeLang === 'it'"
+          (click)="clickTranslate('it')"
+          aria-label="Passa all'Italiano"
+          title="Italiano"
+        >
+          <img
+            src="assets/images/flag-italy-ico.ico"
+            alt="IT"
+            width="16"
+            height="16"
+          />
+          <span class="lang-code">IT</span>
+        </button>
+      </div>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button
+        type="button"
+        class="mobile-toggle-btn mobile-only"
+        [class.open]="mobileMenuOpen"
+        (click)="toggleMobileMenu()"
+        aria-label="Abrir menú"
+      >
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
       </button>
     </div>
-  </nav>
+  </div>
 
-  <div [ngbNavOutlet]="nav"></div>
+  <!-- Mobile Navigation Drawer -->
+  <div
+    class="mobile-drawer"
+    [class.open]="mobileMenuOpen"
+    (click)="closeMobileMenu()"
+  >
+    <div class="mobile-drawer-content" (click)="$event.stopPropagation()">
+      <nav class="mobile-nav-links">
+        <a
+          routerLink="/home"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          class="mobile-nav-item"
+          (click)="closeMobileMenu()"
+        >
+          {{ t("home") }}
+        </a>
+        <a
+          routerLink="/about"
+          routerLinkActive="active"
+          class="mobile-nav-item"
+          (click)="closeMobileMenu()"
+        >
+          {{ t("about") }}
+        </a>
+        <a
+          routerLink="/projects"
+          routerLinkActive="active"
+          class="mobile-nav-item"
+          (click)="closeMobileMenu()"
+        >
+          {{ t("projects") }}
+        </a>
+        <a
+          routerLink="/contact"
+          routerLinkActive="active"
+          class="mobile-nav-item"
+          (click)="closeMobileMenu()"
+        >
+          {{ t("contact") }}
+        </a>
+      </nav>
+    </div>
+  </div>
 </header>

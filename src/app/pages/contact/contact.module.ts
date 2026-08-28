@@ -5,10 +5,9 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { ContactComponent } from './contact.component';
 import { TranslocoModule } from '@ngneat/transloco';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { IntersectDirective } from '../../shared/directives/intersect.directive';
 
-const routes: Routes = [
-  { path: '', component: ContactComponent }
-];
+const routes: Routes = [{ path: '', component: ContactComponent }];
 
 @NgModule({
   declarations: [ContactComponent],
@@ -17,7 +16,8 @@ const routes: Routes = [
     ReactiveFormsModule,
     TranslocoModule,
     FontAwesomeModule,
-    RouterModule.forChild(routes)
-  ]
+    IntersectDirective,
+    RouterModule.forChild(routes),
+  ],
 })
-export class ContactModule { }
+export class ContactModule {}

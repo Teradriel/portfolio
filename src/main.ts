@@ -19,18 +19,21 @@ const routes: Routes = [
     loadChildren: () =>
       import('./app/pages/home/home.module').then((m) => m.HomeModule),
     title: 'Luca Terzariol - Portfolio',
+    data: { animation: 'Home' },
   },
   {
     path: 'about',
     loadChildren: () =>
       import('./app/pages/about/about.module').then((m) => m.AboutModule),
     title: 'About - Luca Terzariol',
+    data: { animation: 'About' },
   },
   {
     path: 'contact',
     loadChildren: () =>
       import('./app/pages/contact/contact.module').then((m) => m.ContactModule),
     title: 'Contact - Luca Terzariol',
+    data: { animation: 'Contact' },
   },
   {
     path: 'projects',
@@ -39,6 +42,7 @@ const routes: Routes = [
         (m) => m.ProjectsModule,
       ),
     title: 'Projects - Luca Terzariol',
+    data: { animation: 'Projects' },
   },
   { path: '', redirectTo: 'home', pathMatch: 'full' as const },
   { path: '**', redirectTo: 'home' },

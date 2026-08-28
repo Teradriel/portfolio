@@ -7,13 +7,14 @@ import { TranslocoModule } from '@ngneat/transloco';
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.css'],
   standalone: true,
-  imports: [CommonModule, TranslocoModule]
+  imports: [CommonModule, TranslocoModule],
 })
 export class FooterComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
+  ngOnInit(): void {}
 
-  ngOnInit(): void {
+  scrollToTop(): void {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
-
 }

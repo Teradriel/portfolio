@@ -1,28 +1,152 @@
-<div class="contenedor rectangle" *transloco="let t; read: 'about'">
-  <h1 class="texto">{{ t("title") }}</h1>
-</div>
-<section *transloco="let t; read: 'about'">
-  <div>
-    <p>{{ t("1_parag") }}</p>
-    <p>{{ t("2_parag") }}</p>
-    <p>{{ t("3_parag") }}</p>
-    <p>
-      {{ t("4_parag") }}
-      <q>{{ t("x4_parag") }}</q>
+<div class="about-page-wrapper" *transloco="let t; read: 'about'">
+  <!-- Header Banner -->
+  <div class="page-header-banner fade-in-up" appIntersect>
+    <span class="badge-pill">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10"></circle>
+        <polyline points="12 6 12 12 16 14"></polyline>
+      </svg>
+      {{ t("header_badge") }}
+    </span>
+    <h1><span class="text-gradient">{{ t("title") }}</span></h1>
+    <p class="header-intro">
+      {{ t("header_intro") }}
     </p>
-    <p>
-      {{ t("5_parag") }} <a class="url" (click)="key()">{{ t("key") }}</a>
-      {{ t("51_parag") }}
-      <a href="https://www.guildwars2.com/" target="_blank">Guild Wars 2</a>.
-      {{ t("x5_parag") }}
-    </p>
-    <p>{{ t("6_parag") }}</p>
-    <p>{{ t("6b_parag") }}</p>
-    <p>{{ t("7_parag") }}</p>
-    <h5>
-      {{ t("8_parag") }}
-      <br />
-      {{ t("x8_parag") }}
-    </h5>
   </div>
-</section>
+
+  <!-- Narrative Timeline Section -->
+  <div class="container timeline-container">
+    <!-- Chapter 1: Primeros pasos -->
+    <div class="timeline-item fade-in-up" appIntersect>
+      <div class="timeline-marker">
+        <span class="marker-icon">💻</span>
+      </div>
+      <div class="glass-card story-card">
+        <div class="story-badge">{{ t("ch1_badge") }}</div>
+        <h3>{{ t("ch1_title") }}</h3>
+        <p>{{ t("1_parag") }}</p>
+        <p>{{ t("2_parag") }}</p>
+        <div class="tag-row">
+          <span class="tech-tag">MS-DOS</span>
+          <span class="tech-tag">Windows 3.1</span>
+          <span class="tech-tag">{{t("classic_games")}}</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Chapter 2: Música -->
+    <div class="timeline-item fade-in-up delay-1" appIntersect>
+      <div class="timeline-marker">
+        <span class="marker-icon">🥁</span>
+      </div>
+      <div class="glass-card story-card">
+        <div class="story-badge indigo">{{ t("ch2_badge") }}</div>
+        <h3>{{ t("ch2_title") }}</h3>
+        <p>{{ t("3_parag") }}</p>
+        <div class="tag-row">
+          <span class="tech-tag indigo">{{t("drummer")}}</span>
+          <span class="tech-tag indigo">{{t("symphonic_metal")}}</span>
+          <span class="tech-tag indigo">{{t("teamwork")}}</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Chapter 3: Ingeniería Química -->
+    <div class="timeline-item fade-in-up delay-1" appIntersect>
+      <div class="timeline-marker">
+        <span class="marker-icon">🧪</span>
+      </div>
+      <div class="glass-card story-card">
+        <div class="story-badge emerald">{{ t("ch3_badge") }}</div>
+        <h3>{{ t("ch3_title") }}</h3>
+        <p>{{ t("4_parag") }}</p>
+
+        <!-- Quote Callout -->
+        <div class="quote-box">
+          <div class="quote-icon">“</div>
+          <q class="quote-text">{{ t("x4_parag") }}</q>
+        </div>
+
+        <div class="tag-row">
+          <span class="tech-tag emerald">{{ t("double_degree") }}</span>
+          <span class="tech-tag emerald">{{ t("unc_cordoba") }}</span>
+          <span class="tech-tag emerald">{{ t("salerno_italia") }}</span>
+          <span class="tech-tag emerald">{{ t("problem_solving") }}</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Chapter 4: La Clave & Filosofía -->
+    <div class="timeline-item fade-in-up delay-2" appIntersect>
+      <div class="timeline-marker">
+        <span class="marker-icon">⚔️</span>
+      </div>
+      <div class="glass-card story-card">
+        <div class="story-badge amber">{{ t("ch4_badge") }}</div>
+        <h3>{{ t("ch4_title") }}</h3>
+        <p>
+          {{ t("5_parag") }}
+          <a class="interactive-link" (click)="key()" role="button" tabindex="0">
+            <span class="link-label">{{ t("key") }}</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </a>
+          {{ t("51_parag") }}
+          <a href="https://www.guildwars2.com/" target="_blank" rel="noopener noreferrer"
+            class="interactive-link external">
+            <span class="link-label">Guild Wars 2</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </a>.
+        </p>
+        <p class="highlight-philosophy">
+          {{ t("x5_parag") }}
+        </p>
+      </div>
+    </div>
+
+    <!-- Chapter 5: Desarrollo de Software -->
+    <div class="timeline-item fade-in-up delay-2" appIntersect>
+      <div class="timeline-marker">
+        <span class="marker-icon">🚀</span>
+      </div>
+      <div class="glass-card story-card">
+        <div class="story-badge primary">{{ t("ch5_badge") }}</div>
+        <h3>{{ t("ch5_title") }}</h3>
+        <p>{{ t("6_parag") }}</p>
+        <p>{{ t("6b_parag") }}</p>
+        <p>{{ t("7_parag") }}</p>
+        <div class="tag-row">
+          <span class="tech-tag primary">.NET MAUI</span>
+          <span class="tech-tag primary">Angular</span>
+          <span class="tech-tag primary">Java</span>
+          <span class="tech-tag primary">SQL Server</span>
+          <span class="tech-tag primary">{{ t("self_taught") }}</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Final Motivational Banner -->
+    <div class="final-banner-wrapper fade-in-up delay-3" appIntersect>
+      <div class="glass-card banner-glow-card text-center">
+        <div class="banner-sparkle">✨</div>
+        <h2 class="banner-title">{{ t("8_parag") }}</h2>
+        <p class="banner-subtitle text-gradient">{{ t("x8_parag") }}</p>
+        <div class="banner-action">
+          <a routerLink="/projects" class="btn-modern btn-modern-primary">
+            <span>{{ t("view_projects_btn") }}</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

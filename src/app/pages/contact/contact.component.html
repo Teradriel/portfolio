@@ -1,38 +1,154 @@
-<div class="contenedor rectangle" *transloco="let t, read 'contact'">
-  <h1 class="texto">{{t('title')}}</h1>
-</div>
-<section class="container" *transloco="let t, read 'contact'">
-  <div class="row">
-    <div class="col-auto">
-      <p class="lead">
-        {{t('parag')}}
-      </p>
-      <div class="row">
-        <div class="col-md-4">
-          <h1>
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/in/luca-terzariol/"
-            >
-              <fa-icon [icon]="faLinkedinIn" id="LI"></fa-icon>
-            </a>
-          </h1>
-        </div>
-        <div class="col-md-4">
-          <h1>
-            <a target="_blank" href="https://github.com/Teradriel">
-              <fa-icon [icon]="faGithub" id="GH"></fa-icon>
-            </a>
-          </h1>
-        </div>
-        <div class="col-md-4">
-          <h1>
-            <a target="_blank" href="mailto:inglterzariol@gmail.com">
-              <fa-icon [icon]="faEnvelope" id="Mail"></fa-icon>
-            </a>
-          </h1>
-        </div>
-      </div>
+<div class="contact-page-wrapper" *transloco="let t; read: 'contact'">
+  <!-- Header Banner -->
+  <div class="page-header-banner fade-in-up" appIntersect>
+    <span class="badge-pill">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+        <polyline points="22,6 12,13 2,6"></polyline>
+      </svg>
+      {{ t("header_badge") }}
+    </span>
+    <h1><span class="text-gradient">{{ t("title") }}</span></h1>
+    <p class="header-intro">
+      {{ t("parag") }}
+    </p>
+
+    <!-- Availability Status Badge -->
+    <div class="status-indicator">
+      <span class="status-dot"></span>
+      <span class="status-text">{{ t("status_text") }}</span>
     </div>
   </div>
-</section>
+
+  <div class="container contact-container">
+    <!-- Quick Contact Cards Grid -->
+    <div class="contact-cards-grid">
+      <!-- LinkedIn Card -->
+      <a href="https://www.linkedin.com/in/luca-terzariol/" target="_blank" rel="noopener noreferrer"
+        class="glass-card contact-card linkedin-card fade-in-up" appIntersect>
+        <div class="contact-card-icon linkedin-bg">
+          <fa-icon [icon]="faLinkedinIn"></fa-icon>
+        </div>
+        <div class="contact-card-body">
+          <span class="contact-card-type">{{ t("card_type_linkedin") }}</span>
+          <h3 class="contact-card-title">LinkedIn</h3>
+          <p class="contact-card-value">luca-terzariol</p>
+        </div>
+        <div class="contact-arrow">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </div>
+      </a>
+
+      <!-- GitHub Card -->
+      <a href="https://github.com/Teradriel" target="_blank" rel="noopener noreferrer"
+        class="glass-card contact-card github-card fade-in-up delay-1" appIntersect>
+        <div class="contact-card-icon github-bg">
+          <fa-icon [icon]="faGithub"></fa-icon>
+        </div>
+        <div class="contact-card-body">
+          <span class="contact-card-type">{{ t("card_type_github") }}</span>
+          <h3 class="contact-card-title">GitHub</h3>
+          <p class="contact-card-value">@Teradriel</p>
+        </div>
+        <div class="contact-arrow">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </div>
+      </a>
+
+      <!-- Email Card with Copy Button -->
+      <div class="glass-card contact-card email-card fade-in-up delay-2" appIntersect>
+        <a href="mailto:inglterzariol@gmail.com" target="_blank" rel="noopener noreferrer"
+          class="contact-card-link-wrapper" title="inglterzariol@gmail.com">
+          <div class="contact-card-icon email-bg">
+            <fa-icon [icon]="faEnvelope"></fa-icon>
+          </div>
+          <div class="contact-card-body">
+            <span class="contact-card-type">{{ t("card_type_email") }}</span>
+            <h3 class="contact-card-title">Email</h3>
+            <p class="contact-card-value">inglterzariol&#64;gmail.com</p>
+          </div>
+        </a>
+        <button type="button" class="btn-copy-email" [class.copied]="copied" (click)="copyEmail($event)"
+          [title]="t('copy_email_title')">
+          @if (!copied){
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+          </svg>
+          <span>{{ t("copy_btn") }}</span>
+          } @else {
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+          <span class="copied-text">{{ t("copied_btn") }}</span>
+          }
+        </button>
+      </div>
+    </div>
+
+    <!-- Interactive Message Form -->
+    <div class="glass-card contact-form-card fade-in-up delay-3" appIntersect>
+      <div class="form-header">
+        <span class="form-tag">{{ t("form_tag") }}</span>
+        <h2>{{ t("form_title") }}</h2>
+        <p>{{ t("form_desc") }}</p>
+      </div>
+      @if (submitted){
+      <div class="form-success-banner">
+        <span class="success-icon">✓</span>
+        <div>
+          <h4>{{ t("form_success_title") }}</h4>
+          <p>{{ t("form_success_desc") }}</p>
+        </div>
+      </div>
+      }
+      @else {
+      <form [formGroup]="form" (ngSubmit)="onSubmit($event)" class="modern-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="nombre">{{ t("form_name_label") }}</label>
+            <input type="text" id="nombre" formControlName="nombre" [placeholder]="t('form_name_placeholder')"
+              class="form-control-modern" required />
+          </div>
+          <div class="form-group">
+            <label for="email">{{ t("form_email_label") }}</label>
+            <input type="email" id="email" formControlName="email" [placeholder]="t('form_email_placeholder')"
+              class="form-control-modern" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="mensaje">{{ t("form_msg_label") }}</label>
+          <textarea id="mensaje" formControlName="mensaje" rows="5" [placeholder]="t('form_msg_placeholder')"
+            class="form-control-modern textarea-modern" required></textarea>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn-modern btn-modern-primary" [disabled]="form.invalid || isSubmitting">
+            @if (!isSubmitting){
+            <span>{{ t("form_submit_btn") }}</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="22" y1="2" x2="11" y2="13"></line>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+            } @else {
+            <span>{{ t("form_submitting_btn") }}</span>
+            }
+          </button>
+        </div>
+      </form>
+      }
+    </div>
+  </div>
+</div>

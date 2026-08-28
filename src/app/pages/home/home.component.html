@@ -1,112 +1,214 @@
-<section *transloco="let t; read: 'home'">
-  <div class="rectangle contenedor">
-    <div class="texto">
-      <h1>Luca Terzariol</h1>
-      <p>{{ t("ing_sub") }}</p>
+<section class="home-wrapper" *transloco="let t; read: 'home'">
+  <!-- Hero Section -->
+  <div class="hero-section">
+    <div class="hero-container fade-in-up" appIntersect>
+      <div class="hero-badge">
+        <span class="pulse-dot"></span>
+        <span>{{ t("hero_badge") }}</span>
+      </div>
+
+      <h1 class="hero-title">
+        {{ t("hero_greeting") }} <span class="text-gradient">Luca Terzariol</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        {{ t("ing_sub") }}
+      </p>
+
+      <div class="hero-actions">
+        <a routerLink="/projects" class="btn-modern btn-modern-primary">
+          <span>{{ t("hero_explore_btn") }}</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+        <a routerLink="/contact" class="btn-modern btn-modern-secondary">
+          <span>{{ t("hero_contact_btn") }}</span>
+        </a>
+      </div>
+
+      <!-- Quick CV Buttons -->
+      <div class="cv-quick-bar">
+        <span class="cv-bar-label">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          {{ t("download_cv_label") }}
+        </span>
+        <button type="button" class="cv-chip-btn" (click)="cvDev()" [title]="t('CV_pop')">
+          <span class="dot-accent dev"></span>
+          <span>{{ t("cv_dev_btn") }}</span>
+        </button>
+        <button type="button" class="cv-chip-btn" (click)="cvIng()" [title]="t('CV_pop')">
+          <span class="dot-accent ing"></span>
+          <span>{{ t("cv_ing_btn") }}</span>
+        </button>
+      </div>
     </div>
   </div>
 
-  <div class="container marketing">
-    <div class="row fade-in-up" appIntersect>
-      <div class="col-lg-4">
-        <button
-          type="button"
-          class="circle"
-          id="ing"
-          (click)="cvIng()"
-          placement="bottom"
-          ngbPopover="{{ t('CV_pop') }}"
-          popoverTitle="{{ t('CV_title') }}"
-          [attr.aria-label]="t('CV_title') + ' - ' + t('ing_title')"
-          role="button"
-          tabindex="0"
-        ></button>
-        <h2>{{ t("ing_title") }}</h2>
-        <p>{{ t("ing_parag") }}</p>
-      </div>
-      <div class="col-lg-4">
-        <button
-          type="button"
-          class="circle"
-          id="dev"
-          (click)="cvDev()"
-          placement="bottom"
-          ngbPopover="{{ t('CV_pop') }}"
-          popoverTitle="{{ t('CV_title') }}"
-          [attr.aria-label]="t('CV_title') + ' - ' + t('dev_title')"
-          role="button"
-          tabindex="0"
-        ></button>
-        <h2>{{ t("dev_title") }}</h2>
-        <p>{{ t("dev_parag") }}</p>
+  <!-- Main Container -->
+  <div class="container main-content">
+    <!-- Section Title: Especialidades & Pasiones -->
+    <div class="section-heading text-center fade-in-up" appIntersect>
+      <span class="section-tag">{{ t("pillars_tag") }}</span>
+      <h2>{{ t("pillars_title") }}</h2>
+      <p class="section-desc">{{ t("pillars_desc") }}</p>
+    </div>
+
+    <!-- 3 Identity Cards Grid -->
+    <div class="pillars-grid">
+      <!-- Pillar 1: Ingeniero Químico -->
+      <div class="glass-card pillar-card fade-in-up" appIntersect>
+        <div class="pillar-header">
+          <div class="pillar-icon-box ing-glow">
+            <img src="assets/images/ing.png" alt="Ingeniero Químico" class="pillar-avatar" />
+          </div>
+          <span class="pillar-badge ing">{{ t("ing_badge") }}</span>
+        </div>
+        <h3 class="pillar-title">{{ t("ing_title") }}</h3>
+        <p class="pillar-text">{{ t("ing_parag") }}</p>
+        <div class="pillar-footer">
+          <button type="button" class="pillar-btn ing" (click)="cvIng()" ngbPopover="{{ t('CV_pop') }}"
+            popoverTitle="{{ t('CV_title') }}" placement="top">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            <span>{{ t("ing_btn") }}</span>
+          </button>
+        </div>
       </div>
 
-      <div class="col-lg-4">
-        <div
-          class="circle"
-          id="musico"
-          role="img"
-          [attr.aria-label]="t('mus_title')"
-        ></div>
-        <h2>{{ t("mus_title") }}</h2>
-        <p>{{ t("mus_parag") }}</p>
+      <!-- Pillar 2: Desarrollador Web Fullstack -->
+      <div class="glass-card pillar-card highlighted fade-in-up delay-1" appIntersect>
+        <div class="card-glow-layer"></div>
+        <div class="pillar-header">
+          <div class="pillar-icon-box dev-glow">
+            <img src="assets/images/dev.png" alt="Desarrollador Software" class="pillar-avatar" />
+          </div>
+          <span class="pillar-badge dev">{{ t("dev_badge") }}</span>
+        </div>
+        <h3 class="pillar-title">{{ t("dev_title") }}</h3>
+        <p class="pillar-text">{{ t("dev_parag") }}</p>
+        <div class="pillar-footer">
+          <button type="button" class="pillar-btn dev" (click)="cvDev()" ngbPopover="{{ t('CV_pop') }}"
+            popoverTitle="{{ t('CV_title') }}" placement="top">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            <span>{{ t("dev_btn") }}</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Pillar 3: Músico -->
+      <div class="glass-card pillar-card fade-in-up delay-2" appIntersect>
+        <div class="pillar-header">
+          <div class="pillar-icon-box mus-glow">
+            <img src="assets/images/musico.png" alt="Músico" class="pillar-avatar" />
+          </div>
+          <span class="pillar-badge mus">{{ t("mus_badge") }}</span>
+        </div>
+        <h3 class="pillar-title">{{ t("mus_title") }}</h3>
+        <p class="pillar-text">{{ t("mus_parag") }}</p>
       </div>
     </div>
 
-    <hr class="featurette-divider" />
-
-    <div class="row featurette fade-in-up" appIntersect>
-      <div class="col-md-7">
-        <h2 class="featurette-heading">
-          FrontEnd:
-          <span class="text-muted">Angular</span>
-        </h2>
-        <p class="lead">{{ t("angul_parag") }}</p>
+    <!-- Tech Stack Featurettes Showcase -->
+    <div class="tech-showcase-section">
+      <div class="section-heading text-center fade-in-up" appIntersect>
+        <span class="section-tag">{{ t("tech_tag") }}</span>
+        <h2>{{ t("tech_title") }}</h2>
+        <p class="section-desc">{{ t("tech_desc") }}</p>
       </div>
-      <div class="col-md-5">
-        <img
-          src="../../../assets/images/Angular_full_color_logo.svg.png"
-          alt="Angular"
-          width="200"
-          height="200"
-        />
+
+      <div class="tech-featurettes-list">
+        <!-- Featurette 1: Angular -->
+        <div class="glass-card featurette-card fade-in-up" appIntersect>
+          <div class="featurette-content">
+            <div class="tech-pill-header">
+              <span class="tech-tag primary">FrontEnd Ecosystem</span>
+              <span class="tech-version">v21</span>
+            </div>
+            <h3>Angular <span class="text-muted-highlight">{{ t("angul_sub") }}</span></h3>
+            <p>{{ t("angul_parag") }}</p>
+            <div class="tech-tags-group">
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">RxJS</span>
+              <span class="tech-tag">Transloco i18n</span>
+              <span class="tech-tag">Bootstrap / CSS3</span>
+              <span class="tech-tag">Standalone Components</span>
+            </div>
+          </div>
+          <div class="featurette-visual">
+            <div class="logo-glow-wrapper angular-bg">
+              <img src="assets/images/Angular_full_color_logo.svg.png" alt="Angular" class="tech-logo" width="130"
+                height="130" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Featurette 2: Java & Spring -->
+        <div class="glass-card featurette-card reverse fade-in-up" appIntersect>
+          <div class="featurette-content">
+            <div class="tech-pill-header">
+              <span class="tech-tag emerald">BackEnd Services</span>
+              <span class="tech-version">Spring Boot</span>
+            </div>
+            <h3>Java <span class="text-muted-highlight">{{ t("java_sub") }}</span></h3>
+            <p>{{ t("java_parag") }}</p>
+            <div class="tech-tags-group">
+              <span class="tech-tag emerald">Spring Boot</span>
+              <span class="tech-tag emerald">Spring Security</span>
+              <span class="tech-tag emerald">JWT Auth</span>
+              <span class="tech-tag emerald">REST APIs</span>
+              <span class="tech-tag emerald">MySQL / SQL Server</span>
+              <span class="tech-tag emerald">Docker</span>
+            </div>
+          </div>
+          <div class="featurette-visual">
+            <div class="logo-glow-wrapper java-bg">
+              <img src="assets/images/java.png" alt="Java" class="tech-logo" width="130" height="130" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Featurette 3: .NET & C# -->
+        <div class="glass-card featurette-card fade-in-up" appIntersect>
+          <div class="featurette-content">
+            <div class="tech-pill-header">
+              <span class="tech-tag indigo">Microsoft Ecosystem</span>
+              <span class="tech-version">MAUI & WPF</span>
+            </div>
+            <h3>.NET <span class="text-muted-highlight">{{ t("net_sub") }}</span></h3>
+            <p>{{ t("net_parag") }}</p>
+            <div class="tech-tags-group">
+              <span class="tech-tag indigo">C#</span>
+              <span class="tech-tag indigo">.NET MAUI</span>
+              <span class="tech-tag indigo">WPF & XAML</span>
+              <span class="tech-tag indigo">MVVM Pattern</span>
+              <span class="tech-tag indigo">SQLite</span>
+              <span class="tech-tag indigo">Syncfusion</span>
+            </div>
+          </div>
+          <div class="featurette-visual">
+            <div class="logo-glow-wrapper dotnet-bg">
+              <img src="assets/images/Microsoft_.NET_logo.png" alt=".NET" class="tech-logo" width="130" height="130" />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-
-    <hr class="featurette-divider" />
-
-    <div class="row featurette fade-in-up" appIntersect>
-      <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading">
-          BackEnd:
-          <span class="text-muted">{{ t("java-php") }}</span>
-        </h2>
-        <p class="lead">{{ t("java_parag") }}</p>
-      </div>
-      <div class="col-md-5 order-md-1">
-        <img src="../../../assets/images/java.png" alt="java" />
-      </div>
-    </div>
-
-    <hr class="featurette-divider" />
-
-    <div class="row featurette fade-in-up" appIntersect>
-      <div class="col-md-7">
-        <h2 class="featurette-heading">
-          <span class="text-muted">.NET</span>
-        </h2>
-        <p class="lead">{{ t("net_parag") }}</p>
-      </div>
-      <div class="col-md-5">
-        <img
-          src="../../../assets/images/Microsoft_.NET_logo.png"
-          alt=".NET"
-          width="200"
-          height="200"
-        />
-      </div>
-    </div>
-
-    <hr class="featurette-divider" />
   </div>
 </section>
